@@ -11,16 +11,16 @@
 
 // DEFINITIONS
 
-#define STARTCOLOR 0xFFFFFF  // LED colors at start
+#define STARTCOLOR 0x000000  // LED colors at start
 #define BLACK      0x000000  // LED color BLACK
 
 #define DATAPIN    13        // Datapin
 #define LEDCOUNT   71       // Number of LEDs used for boblight
 #define SHOWDELAY  200       // Delay in micro seconds before showing
-#define BAUDRATE   115200    // Serial port speed, 460800 tested with Arduino Uno R3
+#define BAUDRATE   460800    // Serial port speed, 460800 tested with Arduino Uno R3
 #define BRIGHTNESS 90        // Max. brightness in %
 
-const char prefix[] = {0x41, 0x64, 0x61, 0x00, 0x18, 0x4D};  // Start prefix
+const char prefix[] = {0x41, 0x64, 0x61, 0x00, 0x46, 0x13};  // Start prefix
 char buffer[sizeof(prefix)]; // Temp buffer for receiving prefix data 
 
 // Init LED strand, WS2811/WS2912 specific
